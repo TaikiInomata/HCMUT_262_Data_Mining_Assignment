@@ -13,10 +13,13 @@ Repository này phục vụ bài tập lớn môn Khai phá dữ liệu, tập t
 
 ## 3. Cấu trúc thư mục
 
-- `preprocessing_MBA.ipynb`: Notebook tiền xử lý dữ liệu.
-- `algorithms_MBA.ipynb`: Notebook áp dụng thuật toán khai phá luật kết hợp.
-- `groceries_cleaned.csv`: Dữ liệu đã làm sạch.
-- `basket_matrix.csv`: Ma trận giao dịch (basket/one-hot) dùng cho thuật toán.
+- `src/preprocessing_MBA.ipynb`: Notebook tiền xử lý dữ liệu.
+- `src/algorithms_MBA.ipynb`: Notebook áp dụng thuật toán khai phá luật kết hợp.
+- `src/visualization_MBA.ipynb`: Notebook trực quan hóa kết quả.
+- `src/data/processed/`: Chứa dữ liệu đã xử lý (`groceries_cleaned.csv`, `basket_matrix.csv`, `association_rules_cleaned.csv`, ...).
+- `src/artifacts/`: Chứa artifact trung gian (ví dụ `transactions_list.pkl`).
+- `src/reports/metrics/`: Chứa chỉ số thực nghiệm (`performance_metrics.json`).
+- `src/reports/figures/`: Chứa biểu đồ đầu ra (`*.png`).
 - `requirements.txt`: Danh sách thư viện Python.
 
 ## 4. Hướng dẫn cài đặt môi trường .venv
@@ -85,8 +88,8 @@ deactivate
 
 ## 5. Quy trình thực hiện gợi ý
 
-1. Chạy notebook `preprocessing_MBA.ipynb` để chuẩn hóa và làm sạch dữ liệu.
-2. Chạy notebook `algorithms_MBA.ipynb` để khai phá tập phổ biến và luật kết hợp.
+1. Chạy notebook `src/preprocessing_MBA.ipynb` để chuẩn hóa và làm sạch dữ liệu.
+2. Chạy notebook `src/algorithms_MBA.ipynb` để khai phá tập phổ biến và luật kết hợp.
 3. Lọc các luật có ý nghĩa theo ngưỡng support/confidence/lift.
 4. Tổng hợp kết quả cho phần báo cáo và trình bày.
 
